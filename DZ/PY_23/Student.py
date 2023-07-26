@@ -8,9 +8,9 @@ class Student:
         
     def show(self):
         print(self.__name,
-        self.__group,
-        self.__gpa,
-        self.__id, end=' | ')
+        'группа - ', self.__group,
+        'Средний балл - ', self.__gpa,
+        'id студента - ', self.__id, end=' | ')
     # тот же самый геттер, только лучше
     @property # @property -декоратор (для методов и функций даете новые вомзонжости)
     #геттер READ-ONLY
