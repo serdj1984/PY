@@ -43,12 +43,14 @@ for student in students:
         student.show()
 print("\n\n") 
 
+# =========================================================================================== #
 #-------------------------- отсортировать студентов по убыванию id -------------------------- #
-for j in range(len(students)):# за повторный проход
-    for i in range(len(students)-1):
-        if students[i].getid < students[i+1].getid:
-            students[i], students[i+1] = students[i+1], students[i]
-
-print("\n#---------- отсортировать студентов по убыванию id ----------#\n")            
-for student in students:
-        student.show()
+for j in range(len(students)):# за повторный проход                                           #
+    for i in range(len(students)-1):                                                          #
+        if students[i].getid < students[i+1].getid:                                           #
+            students[i], students[i+1] = students[i+1], students[i]                           #
+                                                                                              #
+print("\n#---------- отсортировать студентов по убыванию id ----------#\n")                   #        
+for student in students:                                                                      #
+        student.show()                                                                        #
+# =========================================================================================== #
