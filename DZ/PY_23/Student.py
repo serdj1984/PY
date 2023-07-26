@@ -7,10 +7,8 @@ class Student:
         self.__id = id 
         
     def show(self):
-        print(self.__name,
-        'группа - ', self.__group,
-        'Средний балл - ', self.__gpa,
-        'id студента - ', self.__id, end=' | ')
+         print(f'{self.__name}: группа - {self.__group}, средний балл - {self.__gpa}, id студента - {self.__id}', end=' | ')
+
     # тот же самый геттер, только лучше
     @property # @property -декоратор (для методов и функций даете новые вомзонжости)
     #геттер READ-ONLY
