@@ -1,10 +1,10 @@
 class Student:
 
-    def __init__(self, name:str='', group:str='', gpa:int=0, id:int=100):
+    def __init__(self, name:str='', group:str='', gpa:int=0, id:int=100): # добавил атрибут id
         self.__name = name
         self.__group = group
         self.__gpa = gpa # 100
-        self.__id = id 
+        self.__id = id  # добавил атрибут id
         
     def show(self):
          print(f'{self.__name}: группа - {self.__group}, средний балл - {self.__gpa}, id студента - {self.__id}', end=' | ')
