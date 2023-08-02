@@ -1,15 +1,6 @@
-
-# через класс магазин
-# Создать класс Корзина товаров ->
-# Для данного задания понадобится класс товар (название, тип(одежда, обувь, украшение), стоимость)
-# реализовать общий список всех товаров
-# список добавленных товаров в корзину
-# необходимо реализовать возможность подсчета товаров
 from Product import Product
 
-# общий список товаров
 # добавление товара в магазин
-# удаление товара из магазина
 class Shop:
     def __init__(self, name:str = '', *products:Product):
         if not(type(name) == str): raise 'name is not str'
@@ -19,7 +10,8 @@ class Shop:
         self.__products = []
         for product in products:
             self.__products.append(product)
-        
+            
+# общий список товаров   
     def show(self):
         print(self.__name,' : ')
         for product in self.__products:
@@ -36,7 +28,8 @@ class Shop:
         if not(type(products) in [Product, tuple]): raise 'products is not Product or tuple'
         for product in products:
             self.__products.append(product)
-    
+
+# удаление товара из магазина
     def del_product(self, product:Product):
         if not(type(product) == Product): raise 'products is not Product '
         self.__products.remove(product)
