@@ -1,3 +1,10 @@
+-- 4 задание
+--   Создать таблицу врачей(имя, должность, ставка) 
+--   добавить 3 любых врача показать всех врачай(имя должность ставка), 
+--   должность которых равна Хирург
+
+
+
 create database if not exists lessondb
 use lessondb
 create table if not exists doctors(
