@@ -37,29 +37,29 @@ with sql.connect("shopIT.db") as con:
     for row in result.fetchall():
         print(row)
 
+    print("""
+     ●    показать все компьютеры бренда “HP” 
+-------------------------------------------------------------""")
     result = cur.execute("""
                 SELECT * FROM computers WHERE `brand` = 'HP';
                 """)
-    print("""
-     ●	показать все компьютеры бренда “HP” 
---------------------------------------------------""")
     for row in result.fetchall():
         print(row)
 
-    result = cur.execute("""
-                SELECT * FROM computers WHERE cost > 40000;
-                """)
     print("""
      ●	показать компьютеры стоимость которых более 40000
 -------------------------------------------------------------""")
+    result = cur.execute("""
+                SELECT * FROM computers WHERE cost > 40000;
+                """)
     for row in result.fetchall():
         print(row)
     
-    result = cur.execute("""
-                SELECT * FROM `computers` WHERE `c_name` LIKE 'Ноутбук' AND `cost` < 30000
-                """)
     print("""
      ●	показать компьютеры типа “ноутбук” и стоимостью менее 30000
 ----------------------------------------------------------------------""")
+    result = cur.execute("""
+                SELECT * FROM `computers` WHERE `c_name` LIKE 'Ноутбук' AND `cost` < 30000
+                """)
     for row in result.fetchall():
         print(row)
