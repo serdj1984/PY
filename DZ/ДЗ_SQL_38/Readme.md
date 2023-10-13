@@ -1,6 +1,6 @@
 <h1>ЗАДАНИЕ</h1>
 
-![alt text](http://DZ/ДЗ_SQL_38/tgf.png)
+![alt text]([http://DZ/ДЗ_SQL_38/tgf.png](https://github.com/serdj1984/PY/blob/main/DZ/%D0%94%D0%97_SQL_38/tgf.png))
 
 создать таблицы для бд как на изображении<br>
 
