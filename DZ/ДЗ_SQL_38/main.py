@@ -45,25 +45,25 @@ with sql.connect("sapper.db") as con:
                 FOREIGN KEY (id_player) REFERENCES players(id));
                     """)
     
-    cur.execute("""
-                INSERT INTO players (name, est_scoreb) VALUES 
-                ('Миша',200),
-                ('Ваня',154),
-                ('Дима',178),
-                ('Коля',210);
-                    """)
+    # cur.execute("""
+    #             INSERT INTO players (name, est_scoreb) VALUES 
+    #             ('Миша',200),
+    #             ('Ваня',154),
+    #             ('Дима',178),
+    #             ('Коля',210);
+    #                 """)
     
-    cur.execute("""
-                INSERT INTO games (name, score, id_player) VALUES 
-                ('Миша',110,1),
-                ('Миша',200,1),
-                ('Дима',178,3),
-                ('Коля',10,4),
-                ('Коля',30,4),
-                ('Коля',40,4),
-                ('Ваня',154,2),
-                ('Коля',210,4);
-                    """)
+    # cur.execute("""
+    #             INSERT INTO games (name, score, id_player) VALUES 
+    #             ('Миша',110,1),
+    #             ('Миша',200,1),
+    #             ('Дима',178,3),
+    #             ('Коля',10,4),
+    #             ('Коля',30,4),
+    #             ('Коля',40,4),
+    #             ('Ваня',154,2),
+    #             ('Коля',210,4);
+    #                 """)
 
     #  ●	показать игроков и их кол-во игр
     res = cur.execute("""
